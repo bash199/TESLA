@@ -1,0 +1,269 @@
+*{
+   padding: 0;
+   margin: 0;
+box-sizing: border-box;
+}
+
+
+@font-face {
+   font-family: Gotham-bold;
+   src: url(Fonts/GothamSSm-Bold_Web.otf);
+}
+@font-face {
+   font-family: Gotham-book;
+   src: url(Fonts/GothamSSm-Book_Web.otf);
+}
+@font-face {
+   font-family:Gotham-light ;
+   src: url(Fonts/GothamSSm-Light_Web.woff2);
+}
+@font-face {
+   font-family: Gotham-medium;
+   src: url(Fonts/GothamSSm-Medium_Web.woff2);
+}
+@font-face {
+   font-family:Gotham-xlight ;
+   src: url(Fonts/GothamSSm-XLight_Web.woff2);
+}
+@font-face {
+   font-family: Gotham-;
+   src: url(Fonts/GothamSSm-Light_Web.woff2);
+}
+body{
+   position:relative;
+   color:rgb(244, 244, 244);
+   font-family:    Gotham-book;
+   height: 5000px;
+
+}
+.first-page{
+   height: 100vh;
+   background: url(/img/Model-3-Main-Hero-Desktop-LHD.jpg) no-repeat center center/cover ;
+
+}
+.navbar-home{
+   color: #fff;
+   text-decoration: none;
+
+   /* fill:currentColor; */
+}
+.svg_logo {
+   margin-right: 46px;
+   max-width: 120px;
+   min-height: 20px;
+}
+
+.top-navbar{
+   /* position:fixed; */
+   top:0;
+   font-family:  Gotham-bold;
+   padding-top: 8px;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 20px;
+   scroll-behavior: smooth;
+   height: 30px;
+   display: flex;
+   justify-content: space-around;
+   align-items: flex-end ;
+}
+
+.inner-header-middle-navbar{
+   position: relative;
+   margin-left: 80px;
+   width: 550px;
+   display: flex;
+   justify-content: space-evenly;
+
+}
+.inner-header-middle-navbar> a{
+   text-decoration: none;
+   color: #f4f4f4;
+}
+/* .inner-header-middle-navbar .modelS:hover{
+   width: 70px;
+background: #333;
+
+} */
+.header-navbar-right-top>a{
+   text-decoration: none;
+   color: #f4f4f4;
+}
+.header-navbar-right-top{
+   width: 250px;
+   padding: 4px 8px; 
+   padding-inline-end: 32px;
+   /* margin-right: 46px; ; */
+   display: flex;
+   justify-content: space-evenly;
+}
+.model3-title{
+   padding: 0 24px;
+   width: 1488px;
+   height: 88px;
+   font-family: Gotham-book ;
+   /* letter-spacing: -0.6px; */
+   font-size: 25px;
+   margin-top: 58px;
+   /* line-height: 48px; */
+   /* text-align: center; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.main-ul{
+   height: 420px;
+}
+
+.footer-nav{
+
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+}
+.footer-box{
+   width:800px ;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+.speed-s{
+   
+   display: flex;
+   align-items: flex-end;
+   justify-items: center;
+   text-align: center;
+}
+.speed-s>h2{
+   font-size: 28px;
+   font-family: Gotham-book;
+
+}
+.speed-s>h3{
+   font-family: Gotham-book;
+   font-size: 24px;
+   padding-left: 8px;
+}
+.speed-s > img{
+   width: 40px  ;
+}
+.speed>p{
+   padding-top: 8px;
+   font-family: Gotham-book;
+   font-size: 12px;
+}
+.speed{
+   width: 110px;
+   height: 55px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-end;
+
+}
+
+.tcl-badge-speedometer__outer-circle{
+   fill:currentColor;
+}
+.awd{
+   font-family: Gotham-book;
+   text-align: center;
+   width: 75px;
+   height: 54px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}.awd>h2{
+   font-size: 26px;
+}.awd>p{
+   padding-top: 8px;
+   font-size:12px;
+}
+.outer-btn{
+   /* width: ; */
+   height: 55px;
+   display: flex;
+
+}
+.btn{
+   width: 215px;
+   height: 45px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   /* align-items: flex-start; */
+}
+.btn-inn{
+   font-family: Gotham-book;
+   width: 200px;
+   height: 35px;
+   border: 3px solid #fff;
+   border-radius: 5px;
+   text-decoration: none;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}.btn-inn > a{
+   width:150px;
+   height: 26px;
+   padding:8px 24px ;
+   text-decoration: none;
+   color: #fff;
+   font-family: Gotham-book;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}.btn-inn > span{
+   width:150px;
+   height: 16.8px;
+   font-family: Gotham-book;
+
+}
+.range{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   text-align: center;
+   width: 108px;
+   height: 54px;
+
+   
+}
+.range>p{
+   padding-top: 8px;
+   font-size: 12px;
+   color:#FFFFFF;
+}
+.range-mi{
+   font-family: Gotham-book;
+   color: #EEEEEE;
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-evenly;
+   
+}
+.range-mi>h2{
+   font-family: Gotham-book;
+   font-size: 28px;
+      color: #EEEEEE;
+padding-left: 4px;}
+
+.range-mi>h3{
+   font-family: Gotham-book;
+   font-size: 24px;
+padding-left: 4px;}
+
+
+
+
+/*===========================*/
+/*=======SECOND PAGE========*/
+/*==========================*/
+.second-page{
+   background: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/ea753653-02a2-4206-aac5-82a33a0a245d/bvlatuR/std/2880x1800/model-3-hero-a-desktop)no-repeat center center/cover;
+   height: 100VH;
+   width: 75%;
+}
