@@ -8,27 +8,27 @@ box-sizing: border-box;
 
 @font-face {
    font-family: Gotham-bold;
-   src: url(Fonts/GothamSSm-Bold_Web.otf);
+   src: url(/assets/Fonts/GothamSSm-Bold_Web.otf);
 }
 @font-face {
    font-family: Gotham-book;
-   src: url(Fonts/GothamSSm-Book_Web.otf);
+   src: url(/assets/Fonts/GothamSSm-Book_Web.otf);
 }
 @font-face {
    font-family:Gotham-light ;
-   src: url(Fonts/GothamSSm-Light_Web.woff2);
+   src: url(/assets/Fonts/GothamSSm-Light_Web.otf);
 }
 @font-face {
    font-family: Gotham-medium;
-   src: url(Fonts/GothamSSm-Medium_Web.woff2);
+   src: url(/assets/Fonts/GothamSSm-Medium_Web.otf);
 }
 @font-face {
    font-family:Gotham-xlight ;
-   src: url(Fonts/GothamSSm-XLight_Web.woff2);
+   src: url(/assets/Fonts/GothamSSm-XLight_Web.otf);
 }
 @font-face {
    font-family: Gotham-;
-   src: url(Fonts/GothamSSm-Light_Web.woff2);
+   src: url(/assets/Fonts/GothamSSm-XLight_Web.otf);
 }
 body{
    position:relative;
@@ -47,7 +47,7 @@ body{
    flex-flow: column;
    align-content:stretch ;
    justify-self: center;
-   background: url(/img/Model-3-Main-Hero-Desktop-LHD.jpg) no-repeat center center/cover ;
+   background: url(/assets/img/Model-3-Main-Hero-Desktop-LHD.jpg) no-repeat center center/cover ;
 
 }
 .navbar-home{
@@ -192,8 +192,7 @@ body{
    align-items: center;
    justify-content: flex-end;
 }
-
-.tcl-badge-speedometerometer__outer-circle{
+.tcl-badge-speedometer__outer-circle{
    fill:currentColor;
 }
 .awd{
@@ -252,7 +251,7 @@ body{
 }
 .btn-inn:hover {
    background-color:var(--text-color);
-transition-duration: 0.5s;
+   transition-duration: 0.5s;
 }
 .btn-inn>a:hover{
    color:var(--hover-text-color);
@@ -457,12 +456,14 @@ transition-duration: 0.5s;
 .btn-inn-page2>a:hover{
    color:#ffffff;
 }
-
+/*===========================*/
+/*=======Third PAGE========*/
+/*==========================*/
 .third-page-body{
    position: relative;
    width: 100%;
    height: 470px;
-   background: url(/img/Model-3-Performance-Hero-Desktop-LHD.jpg) no-repeat center center/cover;
+   background: url(/assets/img/Model-3-Performance-Hero-Desktop-LHD.jpg) no-repeat center center/cover;
    display: flex;
    justify-content: center;
 }
@@ -531,7 +532,7 @@ transition-duration: 0.5s;
    font-family: Gotham-book;
    font-size: 28px;
    color: var(--text-color);
-padding-left: 4px;
+   padding-left: 4px;
 }
 .range-mi-third-page>h3{
    font-family: Gotham-book;
