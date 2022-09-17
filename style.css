@@ -2,6 +2,8 @@
    padding: 0;
    margin: 0;
 box-sizing: border-box;
+--text-color:white;
+--hover-text-color:black;
 }
 
 
@@ -31,75 +33,142 @@ box-sizing: border-box;
 }
 body{
    position:relative;
-   color:rgb(244, 244, 244);
+   color:var(--text-color);
    font-family:    Gotham-book;
    height: 5000px;
 
 }
 .first-page{
-   height: 100vh;
+   height: 800px;
+   width: 98.9vw;
+   /* width: 1000px ; */
+   /* display: flex; */
+   /* flex-wrap: wrap; */
+   /* flex-direction: column */
+   /* justify-content: center; */
+   /* align-items:space-around ; */
+   /* background: url(/img/Model-3-Main-Hero-Desktop-LHD.jpg) no-repeat center center/cover ; */
+}
+/* @media (max-width:1500px){ */
+   /* .first-page{ */
+      /* width: 1500px; */
+   /* } */
+/* } */
+
+/* @media (max-width:1000px){ */
+   /* .first-page{ */
+      /* width: 1000px; */
+   /* } */
+/* } */
+.first-page-body{
+   width: 100%;
+   height: 100%;
+   /* margin: auto; */
+   display: flex; 
+   /* flex-wrap: wrap; */
+   flex-flow: column;
+   /* flex-direction: column; */
+   align-content:stretch ;
+   justify-self: center;
+   /* grid-template-columns: repeat(10, 1fr); */
+   /* grid-template-rows: repeat(10, 1fr); */
+   /* flex-direction: column */
    background: url(/img/Model-3-Main-Hero-Desktop-LHD.jpg) no-repeat center center/cover ;
 
 }
 .navbar-home{
-   color: #fff;
+   width: 15%;
+   height: 100%;
+   display: flex;
+   align-items: flex-end;
+   justify-content: end;
+
+   color: var(--text-color);
    text-decoration: none;
 
    /* fill:currentColor; */
 }
 .svg_logo {
+   padding: 4px 0;
    margin-right: 46px;
    max-width: 120px;
    min-height: 20px;
 }
 
 .top-navbar{
-   /* position:fixed; */
    top:0;
    font-family:  Gotham-bold;
-   padding-top: 8px;
    font-size: 16px;
-   font-weight: 500;
-   line-height: 20px;
    scroll-behavior: smooth;
-   height: 30px;
+   height: 56px;
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    align-items: flex-end ;
+}
+.header-middle-navbar{
+   height: 100%;
+   width: 710px;
 }
 
 .inner-header-middle-navbar{
-   position: relative;
-   margin-left: 80px;
-   width: 550px;
+   width: 100%;
+   height: 100%;
    display: flex;
+   align-items: flex-end;
    justify-content: space-evenly;
 
 }
 .inner-header-middle-navbar> a{
+   padding:4px 0;
    text-decoration: none;
-   color: #f4f4f4;
+   color:var(--text-color);
 }
-/* .inner-header-middle-navbar .modelS:hover{
-   width: 70px;
-background: #333;
+.modelS,.model3,.modelX,.modelY,.solar-roof,.solar-panels{
+   text-align: center;
+   padding-top:4px;
+   width: 107px;
+   height: 24px;
+}
+.inner-header-middle-navbar> a:hover{
+   /* background: grey; */
+   border-radius: 5px;
+   transition:0.3s ease-in-out;
+   backdrop-filter: blur(5px);
 
-} */
+}
 .header-navbar-right-top>a{
+   width: 50%;
+   height: 30px;
    text-decoration: none;
-   color: #f4f4f4;
+   color: var(--text-color);
+   display: flex;
+   align-items: center;
 }
 .header-navbar-right-top{
-   width: 250px;
-   padding: 4px 8px; 
-   padding-inline-end: 32px;
+   text-align: center;
+   width:300px;
+   height: 100%;
+   /* padding: 4px 8px;  */
+   /* padding-inline-end: 32px; */
    /* margin-right: 46px; ; */
    display: flex;
    justify-content: space-evenly;
+   align-items: flex-end;
+}
+.shop,.account,.menu{
+   width:100%;
+   height: 20px;
+}
+.header-navbar-right-top> a:hover{
+   /* background: grey; */
+   border-radius: 5px;
+   transition:0.3s ease-in-out;
+   backdrop-filter: blur(10px);
+
 }
 .model3-title{
-   padding: 0 24px;
-   width: 1488px;
+   /* padding: 0 24px; */
+   width: 100%;
    height: 88px;
    font-family: Gotham-book ;
    /* letter-spacing: -0.6px; */
@@ -127,32 +196,32 @@ background: #333;
    justify-content: space-between;
    align-items: flex-end;
 }
-.speed-s{
+.speedometer-s{
    
    display: flex;
    align-items: flex-end;
    justify-items: center;
    text-align: center;
 }
-.speed-s>h2{
+.speedometer-s>h2{
    font-size: 28px;
    font-family: Gotham-book;
 
 }
-.speed-s>h3{
+.speedometer-s>h3{
    font-family: Gotham-book;
    font-size: 24px;
    padding-left: 8px;
 }
-.speed-s > img{
+.speedometer-s > img{
    width: 40px  ;
 }
-.speed>p{
+.speedometer>p{
    padding-top: 8px;
    font-family: Gotham-book;
    font-size: 12px;
 }
-.speed{
+.speedometer{
    width: 110px;
    height: 55px;
    display: flex;
@@ -162,7 +231,7 @@ background: #333;
 
 }
 
-.tcl-badge-speedometer__outer-circle{
+.tcl-badge-speedometerometer__outer-circle{
    fill:currentColor;
 }
 .awd{
@@ -196,9 +265,9 @@ background: #333;
 }
 .btn-inn{
    font-family: Gotham-book;
-   width: 200px;
-   height: 35px;
-   border: 3px solid #fff;
+   width:100%;
+   height: 100%;
+   border: 3px solid var(--text-color);
    border-radius: 5px;
    text-decoration: none;
    display: flex;
@@ -206,11 +275,11 @@ background: #333;
    justify-content: center;
    align-items: center;
 }.btn-inn > a{
-   width:150px;
-   height: 26px;
+   width:100%;
+   height: 100%;
    padding:8px 24px ;
    text-decoration: none;
-   color: #fff;
+   color: var(--text-color);
    font-family: Gotham-book;
    display: flex;
    align-items: center;
@@ -220,7 +289,13 @@ background: #333;
    width:150px;
    height: 16.8px;
    font-family: Gotham-book;
-
+}
+.btn-inn:hover {
+   background-color:var(--text-color);
+transition-duration: 0.5s;
+}
+.btn-inn>a:hover{
+   color:var(--hover-text-color);
 }
 .range{
    display: flex;
@@ -235,11 +310,11 @@ background: #333;
 .range>p{
    padding-top: 8px;
    font-size: 12px;
-   color:#FFFFFF;
+   color:var(--text-color);
 }
 .range-mi{
    font-family: Gotham-book;
-   color: #EEEEEE;
+   color: var(--text-color);
    display: flex;
    align-items: flex-end;
    justify-content: space-evenly;
@@ -248,7 +323,7 @@ background: #333;
 .range-mi>h2{
    font-family: Gotham-book;
    font-size: 28px;
-      color: #EEEEEE;
+      color: var(--text-color);
 padding-left: 4px;}
 
 .range-mi>h3{
@@ -263,7 +338,284 @@ padding-left: 4px;}
 /*=======SECOND PAGE========*/
 /*==========================*/
 .second-page{
-   background: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/ea753653-02a2-4206-aac5-82a33a0a245d/bvlatuR/std/2880x1800/model-3-hero-a-desktop)no-repeat center center/cover;
+   background: white no-repeat center center/cover;
    height: 100VH;
-   width: 75%;
+   width: 100%;
 }
+.second-page-body{
+   height: 100%;
+   width: 100%;
+   display: flex;
+}.main-img{
+   width: 100%;
+}
+.main-img>img{
+   object-fit:cover;
+   width: 100%;
+   height: 100%;
+}
+.side-text{
+   width:40% ;
+   height: 100%;
+   padding: 32px 40px;
+
+}
+.title{
+   width: 100%;
+   height: 15%;
+   color: #171A20;
+   text-align: start;
+   padding-top: 16px;
+   padding-bottom: 8px;
+
+
+}
+.main-text{
+   width: 100%;
+   height: 40%;
+
+   
+}
+.safety{
+   color: #171A20;
+   font: 300;
+   font-size: 17px;
+   font-family:Gotham-book ;
+   letter-spacing: -0.4px;
+   line-height: 24px;
+   opacity: 1;
+   
+}
+.built-for-safety{
+   color: #171A20;
+   font-family:Gotham-bold ;
+   font-size: 28px;
+   font-weight: 500;
+   letter-spacing: -0.5px;
+   line-height: 36px;
+}
+
+.text-box>p{
+   height: 340px;
+   width: 100%;
+   color: rgb(57, 60, 65);
+   display: block;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 20px;
+   
+}
+.p-exceed > a{
+   color: rgb(57, 60, 65);
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 20px;
+   text-decoration:none;
+   border-bottom: 1px solid rgb(57, 60, 65);
+}
+
+.bottom-links{
+   width: 100%;
+   height: 40%;
+   display: flex;
+   align-items: flex-end;
+
+}
+.learn-more{
+   height: 45px;
+   width: 40%;
+   /* margin-right: 5px; */
+   color: #171A20;
+   /* display: flex; */
+   align-items: center;
+}
+.learn-more-inner{
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   display: flex;
+   align-items: center;
+}
+.learn-more-inner>a{
+   margin-left: 5px;
+   text-decoration: none;
+   color: #171A20;
+}
+.tds-icon {
+   width: 45px;
+   border-radius: 50%;
+   border: 3px solid #171A20;
+   height: 45px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.tds-icon>a{
+   text-decoration: none;
+   font-size: 1.6rem;
+   padding:5px;
+   color:#171A20;
+}
+.tds-icon:hover{
+   background: #171A20;
+}
+.tds-icon>a:hover{
+   color: #ffffff;
+}
+.btn-page2{
+   width: 235px;
+   height: 45px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.btn-inn-page2{
+   font-family: Gotham-book;
+   width:100%;
+   height: 100%;
+   border: 3px solid #171A20;
+   border-radius: 5px;
+   text-decoration: none;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}.btn-inn-page2 > a{
+   width:100%;
+   height: 100%;
+   padding:8px 24px ;
+   text-decoration: none;
+   color: #171A20;
+   font-family: Gotham-book;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}.btn-inn-page2 > span{
+   width:150px;
+   height: 16.8px;
+   font-family: Gotham-book;
+}
+.btn-inn-page2:hover {
+   background-color:#171A20;
+transition-duration: 0.5s;
+}
+.btn-inn-page2>a:hover{
+   color:#ffffff;
+}
+
+.third-page-body{
+   position: relative;
+   width: 100%;
+   height: 470px;
+   background: url(/img/Model-3-Performance-Hero-Desktop-LHD.jpg) no-repeat center center/cover;
+   display: flex;
+   justify-content: center;
+}
+
+.third-page-icon-area{
+   position: absolute;
+   top: 345px;
+   right: 0;
+   left: 0;
+   /* width: 894px; */
+   height: 90px;
+   display: flex;
+   /* flex-direction: column; */
+   /* align-items: center; */
+   justify-content: center;
+   
+}
+
+.speedometer-third-page{
+   width: 272px;
+   height: 90px;
+   /* display: flex; */
+   /* flex-direction: column; */
+   /* align-items: center; */
+   /* justify-content: center; */
+
+}
+
+.speedometer-s-third-page{
+   width: 272px;
+   height: 33px;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+
+}
+.speedometer-s-third-page>h2{
+   font-size: 28px;
+   font-family: Gotham-book;
+
+}
+.speedometer-s-third-page>h3{
+   font-family: Gotham-book;
+   font-size: 24px;
+   padding-left: 8px;
+}
+.speedometer-s-third-page > img{
+   width: 40px  ;
+   padding:0 5px 5px 0 ;
+}
+.speedometer-third-page>p{
+   text-align: center;
+   padding-top: 8px;
+   font-family: Gotham-book;
+   font-size: 12px;
+}
+.range-third-page{
+   /* text-align: center; */
+   /* display: flex; */
+   /* flex-direction: column; */
+   /* justify-content: flex-end; */
+   width: 272px;
+   height: 90px;
+}
+.range-third-page>p{
+   text-align: center;
+   padding-top: 8px;
+   font-size: 12px;
+   color:var(--text-color);
+}
+.range-mi-third-page{
+   font-family: Gotham-book;
+   color: var(--text-color);
+   text-align: center;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   
+}
+.range-mi-third-page>h2{
+   font-family: Gotham-book;
+   font-size: 28px;
+      color: var(--text-color);
+padding-left: 4px;}
+
+.range-mi-third-page>h3{
+   font-family: Gotham-book;
+   font-size: 24px;
+   padding-left: 4px;
+}
+.awd-third-page{
+   text-align: center;
+}
+.awd-third-page>p{
+   width: 272px;
+   height: 90px;
+   font-size: 12px;
+   color:var(--text-color);
+   text-align: center;
+   padding-top:8px;
+}
+
+
+
+
+
+
+
+
+
